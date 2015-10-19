@@ -12,7 +12,6 @@ gem "devise"
 gem "devise-encryptable"
 
 group :development do
-  gem "sqlite3"
   gem "thin"
 
   gem "debugger"
@@ -21,11 +20,14 @@ group :development do
 end
 
 group :test do
-  gem "sqlite3"
   gem "test-unit"
   gem "mocha", :require => false
   gem "factory_girl_rails"
   gem "database_cleaner"
+end
+
+group :development, :test do
+  gem "sqlite3"
 end
 
 group :production do
