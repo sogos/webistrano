@@ -14,7 +14,6 @@ gem "devise-encryptable"
 group :development do
   gem "thin"
 
-  gem "debugger"
   gem "pry"
   gem "pry-rails"
 end
