@@ -1,10 +1,9 @@
 source "https://rubygems.org"
 
-gem "rails", git: "git://github.com/rails/rails.git", branch: "3-2-stable"
+gem 'rails', '~> 3.2', '>= 3.2.22'
+gem 'exception_notification', '~> 3.0', '>= 3.0.1'
 
-gem "exception_notification"
-
-gem "capistrano"
+gem 'capistrano', '~> 2.15', '>= 2.15.7'
 gem "open4"
 gem "syntax"
 gem "version_fu", :github => "jmckible/version_fu"
