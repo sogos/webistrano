@@ -9,7 +9,6 @@ gem "syntax"
 gem "version_fu", :github => "jmckible/version_fu"
 gem "devise"
 gem "devise-encryptable"
-
 group :development do
   gem "thin"
 
@@ -29,7 +28,7 @@ group :development, :test do
 end
 
 group :production do
-  gem "mysql2"
+  gem "mysql2", "~> 0.3.10"
   gem "unicorn"
 end
 
